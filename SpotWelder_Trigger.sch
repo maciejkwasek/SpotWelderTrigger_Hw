@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "SpotWelder_Trigger"
+Date "2020-10-18"
+Rev "1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -111,17 +111,6 @@ F 2 "" H 3800 4000 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/MOC3023M-D.PDF" H 4000 4200 50  0001 L CNN
 	1    4000 4200
 	1    0    0    -1  
-$EndComp
-$Comp
-L Isolator:SFH620A-1 U1
-U 1 1 5F8D750F
-P 4000 3000
-F 0 "U1" H 4000 3367 50  0000 C CNN
-F 1 "SFH620A-1" H 4000 3276 50  0000 C CNN
-F 2 "Package_DIP:DIP-4_W7.62mm" H 4000 2600 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/83675/sfh620a.pdf" H 3950 3000 50  0001 C CNN
-	1    4000 3000
-	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
@@ -242,7 +231,6 @@ F 3 "~" H 8200 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5300 2700 5300 2900
-Connection ~ 5300 2900
 Wire Wire Line
 	5600 2700 5600 2900
 Wire Wire Line
@@ -277,10 +265,6 @@ Wire Wire Line
 	6350 4850 8000 4850
 Wire Wire Line
 	8000 4850 8000 4100
-Wire Wire Line
-	4300 2900 5300 2900
-Wire Wire Line
-	4300 3100 5300 3100
 $Comp
 L Connector:Conn_01x04_Male J3
 U 1 1 5F93B26C
@@ -316,4 +300,90 @@ Wire Wire Line
 	3350 3100 3350 3550
 Wire Wire Line
 	3350 3550 3050 3550
+Text Notes 3550 5150 0    50   ~ 0
+Source: EP 10/2016
+$Comp
+L Isolator:EL817 U1
+U 1 1 5F8E39AD
+P 4000 3000
+F 0 "U1" H 4000 3325 50  0000 C CNN
+F 1 "EL817" H 4000 3234 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 3800 2800 50  0001 L CIN
+F 3 "http://www.everlight.com/file/ProductFile/EL817.pdf" H 4000 3000 50  0001 L CNN
+	1    4000 3000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4007 D4
+U 1 1 5F8ECA07
+P 4850 2700
+F 0 "D4" V 4750 2750 50  0000 L CNN
+F 1 "1N4007" V 4950 2700 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4850 2525 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4850 2700 50  0001 C CNN
+	1    4850 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4007 D3
+U 1 1 5F8EE1AC
+P 4600 2700
+F 0 "D3" V 4500 2750 50  0000 L CNN
+F 1 "1N4007" V 4700 2450 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4600 2525 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4600 2700 50  0001 C CNN
+	1    4600 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4007 D5
+U 1 1 5F8EE49C
+P 4600 3350
+F 0 "D5" V 4500 3400 50  0000 L CNN
+F 1 "1N4007" V 4700 3100 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4600 3175 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4600 3350 50  0001 C CNN
+	1    4600 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N4007 D6
+U 1 1 5F8EE993
+P 4850 3350
+F 0 "D6" V 4750 3400 50  0000 L CNN
+F 1 "1N4007" V 4950 3350 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4850 3175 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4850 3350 50  0001 C CNN
+	1    4850 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 2850 4850 2900
+Wire Wire Line
+	4600 2850 4600 3100
+Wire Wire Line
+	5300 2900 4850 2900
+Connection ~ 5300 2900
+Connection ~ 4850 2900
+Wire Wire Line
+	4850 2900 4850 3200
+Wire Wire Line
+	5300 3100 4600 3100
+Connection ~ 4600 3100
+Wire Wire Line
+	4600 3100 4600 3200
+Wire Wire Line
+	4850 2550 4600 2550
+Wire Wire Line
+	4300 2550 4300 2900
+Connection ~ 4600 2550
+Wire Wire Line
+	4600 2550 4300 2550
+Wire Wire Line
+	4850 3500 4600 3500
+Wire Wire Line
+	4300 3500 4300 3100
+Connection ~ 4600 3500
+Wire Wire Line
+	4600 3500 4300 3500
 $EndSCHEMATC
