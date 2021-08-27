@@ -218,17 +218,6 @@ Wire Wire Line
 Connection ~ 6950 4250
 Wire Wire Line
 	7450 4600 7450 4800
-$Comp
-L Connector:Conn_01x02_Male J1
-U 1 1 5F92556B
-P 8800 3400
-F 0 "J1" H 8772 3374 50  0000 R CNN
-F 1 "230VAC" H 8772 3283 50  0000 R CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" H 8800 3400 50  0001 C CNN
-F 3 "~" H 8800 3400 50  0001 C CNN
-	1    8800 3400
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	5900 3200 5900 3400
 Wire Wire Line
@@ -236,31 +225,11 @@ Wire Wire Line
 Wire Wire Line
 	6200 3400 6950 3400
 Connection ~ 6200 3400
-$Comp
-L Connector:Conn_01x02_Female J2
-U 1 1 5F92C318
-P 8800 4500
-F 0 "J2" H 8828 4476 50  0000 L CNN
-F 1 "ToTransformer" H 8828 4385 50  0000 L CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" H 8800 4500 50  0001 C CNN
-F 3 "~" H 8800 4500 50  0001 C CNN
-	1    8800 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8600 3600 8600 4500
-Connection ~ 8600 3600
-Wire Wire Line
-	8600 3500 8600 3600
 Wire Wire Line
 	6950 4250 6950 3400
 Connection ~ 6950 3400
 Wire Wire Line
 	6950 5150 6950 5350
-Wire Wire Line
-	6950 5350 8600 5350
-Wire Wire Line
-	8600 5350 8600 4600
 Text Notes 4400 5800 0    50   ~ 0
 Source: EP 10/2016
 $Comp
@@ -405,10 +374,10 @@ F 3 "~" H 4150 4600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Conn_01x05_Male J3
+L Connector:Conn_01x05_Male J2
 U 1 1 5FFF5E1D
 P 2700 3500
-F 0 "J3" H 2808 3881 50  0000 C CNN
+F 0 "J2" H 2808 3881 50  0000 C CNN
 F 1 "Conn_01x05_Male" H 2550 3150 50  0001 C CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical" H 2700 3500 50  0001 C CNN
 F 3 "~" H 2700 3500 50  0001 C CNN
@@ -448,13 +417,8 @@ Wire Wire Line
 Wire Wire Line
 	3000 3700 3000 3750
 Connection ~ 8100 3600
-Connection ~ 7900 3400
-Wire Wire Line
-	7900 3400 8600 3400
 Wire Wire Line
 	6950 3400 7900 3400
-Wire Wire Line
-	8100 3600 8600 3600
 Wire Wire Line
 	6200 3600 8100 3600
 Connection ~ 4450 2000
@@ -671,10 +635,10 @@ Wire Wire Line
 	3300 3600 2900 3600
 Connection ~ 3000 4800
 $Comp
-L Connector:Conn_01x02_Male J4
+L Connector:Conn_01x02_Male J3
 U 1 1 5FFBCB07
 P 2700 4800
-F 0 "J4" H 2750 4950 50  0000 C CNN
+F 0 "J3" H 2750 4950 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 2808 4890 50  0001 C CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 2700 4800 50  0001 C CNN
 F 3 "~" H 2700 4800 50  0001 C CNN
@@ -709,4 +673,45 @@ Wire Wire Line
 Wire Wire Line
 	4150 3500 4150 3400
 Connection ~ 4150 3400
+$Comp
+L Connector:Conn_01x06_Male J1
+U 1 1 61295134
+P 8900 3600
+F 0 "J1" H 9000 3200 50  0000 R CNN
+F 1 "Conn_01x06_Male" H 9050 3200 50  0001 R CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_6-G-5,08_1x06_P5.08mm_Vertical" H 8900 3600 50  0001 C CNN
+F 3 "~" H 8900 3600 50  0001 C CNN
+	1    8900 3600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 3400 7900 3400
+Connection ~ 7900 3400
+Wire Wire Line
+	8700 3500 8600 3500
+Wire Wire Line
+	8600 3500 8600 3400
+Wire Wire Line
+	8700 3400 8600 3400
+Connection ~ 8600 3400
+Wire Wire Line
+	8100 3600 8600 3600
+Wire Wire Line
+	8700 3700 8600 3700
+Wire Wire Line
+	8600 3700 8600 3600
+Connection ~ 8600 3600
+Wire Wire Line
+	8600 3600 8700 3600
+Wire Wire Line
+	8700 3800 8600 3800
+Wire Wire Line
+	8600 3800 8600 3900
+Wire Wire Line
+	8600 5350 6950 5350
+Wire Wire Line
+	8700 3900 8600 3900
+Connection ~ 8600 3900
+Wire Wire Line
+	8600 3900 8600 5350
 $EndSCHEMATC
