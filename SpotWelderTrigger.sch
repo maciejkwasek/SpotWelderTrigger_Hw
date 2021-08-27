@@ -555,7 +555,7 @@ F 1 "D_Bridge_+-AA" H 7250 1800 50  0001 R CNN
 F 2 "Diode_THT:Diode_Bridge_Round_D9.0mm" H 6500 2000 50  0001 C CNN
 F 3 "~" H 6500 2000 50  0001 C CNN
 	1    6500 2000
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	4750 2000 4900 2000
