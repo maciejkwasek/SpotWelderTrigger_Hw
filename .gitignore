@@ -4,3 +4,5 @@
 *-cache.lib
 *.kicad_pcb-bak
 plots/
+fp-info-cache
+
