@@ -6,8 +6,10 @@ The project is a two layer printed circuit board with THT elements, made in KiCa
 You can generate gerber files and order PCB in your local manufacturer by your own.
 
 ## Images
-Soon.
 
+![Sample driving circuit](docs/swt1.png?raw=true "SpotWelderTrigger")
+![Sample driving circuit](docs/swt2.png?raw=true "SpotWelderTrigger")
+![Sample driving circuit](docs/swt3.png?raw=true "SpotWelderTrigger")
 
 ## Pinout
 Soon.
